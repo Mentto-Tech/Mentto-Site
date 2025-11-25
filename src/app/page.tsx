@@ -171,10 +171,14 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Case 1 - Plan360 */}
           <div className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-primary/50 transition-all">
-            <div className="relative h-48 w-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-gray-300 text-sm font-semibold">Plan360</p>
-              </div>
+            <div className="relative h-48 w-full">
+              <Image
+                src="https://i0.wp.com/mentto.com.br/wp-content/uploads/elementor/thumbs/Plan-360-ra96wvciqsk467cj388ozmsirww5816hekkjfzud9y.png?w=640&ssl=1"
+                alt="Plan360"
+                fill
+                className="object-cover"
+                unoptimized
+              />
               <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full">
                 Marília
               </div>
@@ -192,10 +196,14 @@ export default function Home() {
 
           {/* Case 2 - InovaSkill */}
           <div className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-primary/50 transition-all">
-            <div className="relative h-48 w-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-gray-300 text-sm font-semibold">InovaSkill</p>
-              </div>
+            <div className="relative h-48 w-full">
+              <Image
+                src="https://i0.wp.com/mentto.com.br/wp-content/uploads/elementor/thumbs/Inova-Skill-ra96xpfcthpahq4u7l8r7f79s8rw2chw6pg2sulrcy.png?w=640&ssl=1"
+                alt="InovaSkill"
+                fill
+                className="object-cover"
+                unoptimized
+              />
               <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full">
                 Pompeia
               </div>

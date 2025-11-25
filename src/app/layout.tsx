@@ -17,6 +17,10 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Mentto - Inovação e Gestão",
   description: "Aceleramos a Inovação, da Estratégia à Entrega",
+  icons: {
+    icon: "https://i0.wp.com/mentto.com.br/wp-content/uploads/2020/04/cropped-simbolo_cor.png?fit=32%2C32&ssl=1",
+    apple: "https://i0.wp.com/mentto.com.br/wp-content/uploads/2020/04/cropped-simbolo_cor.png?fit=180%2C180&ssl=1",
+  },
 };
 
 import Header from "@/components/Header";
