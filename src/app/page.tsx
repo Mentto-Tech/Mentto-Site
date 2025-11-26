@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import { Cpu, TrendingUp, Target, BarChart3, Users, Zap, Hammer } from "lucide-react";
 import Image from "next/image";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -271,25 +272,7 @@ export default function Home() {
               </p>
             </div>
 
-            <form className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-xs font-bold text-white mb-2">Nome *</label>
-                  <input type="text" className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm" placeholder="Nome" required />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-white mb-2">E-mail *</label>
-                  <input type="email" className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm" placeholder="E-mail" required />
-                </div>
-              </div>
-              <div>
-                <label className="block text-xs font-bold text-white mb-2">Mensagem</label>
-                <textarea rows={3} className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm" placeholder="Mensagem"></textarea>
-              </div>
-              <button type="submit" className="w-full bg-secondary text-white font-bold py-3 rounded-lg hover:bg-secondary/90 transition-colors shadow-lg shadow-secondary/20 text-base">
-                Enviar
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
