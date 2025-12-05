@@ -32,9 +32,10 @@ export async function contactFunction(formData: FormData) {
                 email: email,
                 fields: {
                     name: name,
-                    phone: whatsapp, // Mapping whatsapp to phone field usually available
+                    phone: whatsapp,
                     company: company,
-                    segment: segment, // Assuming a custom field 'segment' exists or just sending it
+                    setor: segment,
+                    voucher: ""
                 },
                 groups: process.env.MAILERLITE_GROUP_ID ? [process.env.MAILERLITE_GROUP_ID] : [],
             }),
