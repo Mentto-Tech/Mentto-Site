@@ -3,10 +3,12 @@
 export async function contactFunction(formData: FormData) {
     const name = formData.get("name") as string;
     const email = formData.get("email") as string;
-    const message = formData.get("message") as string;
+    const whatsapp = formData.get("whatsapp") as string;
+    const company = formData.get("company") as string;
+    const segment = formData.get("segment") as string;
 
-    if (!email || !name) {
-        return { success: false, message: "Nome e e-mail são obrigatórios." };
+    if (!email || !name || !company) {
+        return { success: false, message: "Nome, e-mail e empresa são obrigatórios." };
     }
 
     const apiKey = process.env.MAILERLITE_API_KEY;
@@ -30,7 +32,9 @@ export async function contactFunction(formData: FormData) {
                 email: email,
                 fields: {
                     name: name,
-                    message: message, // Ensure this field exists in MailerLite or it might be ignored
+                    phone: whatsapp, // Mapping whatsapp to phone field usually available
+                    company: company,
+                    segment: segment, // Assuming a custom field 'segment' exists or just sending it
                 },
                 groups: process.env.MAILERLITE_GROUP_ID ? [process.env.MAILERLITE_GROUP_ID] : [],
             }),

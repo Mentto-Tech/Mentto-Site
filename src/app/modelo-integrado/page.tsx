@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import FeatureCard from "@/components/FeatureCard";
 import { Target, Users, BarChart, FileText, Rocket } from "lucide-react";
+import CaseCard from "@/components/CaseCard";
+import ContactForm from "@/components/ContactForm";
 
 export default function ModeloIntegrado() {
     return (
@@ -89,46 +91,52 @@ export default function ModeloIntegrado() {
 
                     {/* Process Cards - 5 columns */}
                     <div>
-                        <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-6 text-center">
+                        <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-6 text-center">
                             Nosso processo de acompanhamento
-                        </h3>
+                        </h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                             {/* Card 1 */}
                             <div className="bg-gray-800 rounded-lg p-4 text-center">
-                                <h4 className="font-bold text-white mb-3 text-sm">Diálogos Estratégicos</h4>
-                                <p className="text-gray-300 text-xs leading-relaxed">
+                                <h3 className="font-bold text-white text-xl mb-3">Diálogos Estratégicos</h3>
+                                <br></br>
+                                <hr className="mb-6" />
+                                <p className="text-white-300 text-xs leading-relaxed mb-3">
                                     Mapeamento dos desafios e demandas centrais do projeto, por meio de entrevistas com líderes para compreender o contexto em profundidade.
                                 </p>
                             </div>
 
                             {/* Card 2 */}
                             <div className="bg-secondary rounded-lg p-4 text-center">
-                                <h4 className="font-bold text-white mb-3 text-sm">Kick-off com todos os envolvidos</h4>
-                                <p className="text-white text-xs leading-relaxed">
+                                <h3 className="font-bold text-white text-xl mb-3">Kick-off com todos os envolvidos</h3>
+                                <hr className="mb-6" />
+                                <p className="text-white-300 text-xs leading-relaxed mb-3">
                                     Apresentação clara e objetiva da cultura organizacional, metodologias, processos e ferramentas que servirão como base para orientar, estruturar e otimizar todas as etapas de execução do projeto.
                                 </p>
                             </div>
 
                             {/* Card 3 */}
                             <div className="bg-gray-800 rounded-lg p-4 text-center">
-                                <h4 className="font-bold text-white mb-3 text-sm">Auxílio na construção do direcionamento estratégico</h4>
-                                <p className="text-gray-300 text-xs leading-relaxed">
+                                <h3 className="font-bold text-white text-xl mb-3">Auxílio na construção do direcionamento estratégico</h3>
+                                <hr className="mb-6" />
+                                <p className="text-white-300 text-xs leading-relaxed mb-3">
                                     Condução de um processo colaborativo para desenvolver o pensamento filosófico e definição metas, indicadores e resultados esperados.
                                 </p>
                             </div>
 
                             {/* Card 4 */}
                             <div className="bg-secondary rounded-lg p-4 text-center">
-                                <h4 className="font-bold text-white mb-3 text-sm">Acompanhamento da gestão tática e operacional</h4>
-                                <p className="text-white text-xs leading-relaxed">
+                                <h3 className="font-bold text-white text-xl mb-3">Acompanhamento da gestão tática e operacional</h3>
+                                <hr className="mb-6" />
+                                <p className="text-white-300 text-xs leading-relaxed mb-3">
                                     Suporte sistemático do desempenho, com verificação das metas e gestão das atividades em todos os ciclos de entrega.
                                 </p>
                             </div>
 
                             {/* Card 5 */}
                             <div className="bg-gray-800 rounded-lg p-4 text-center">
-                                <h4 className="font-bold text-white mb-3 text-sm">Facilitação do demonstrativo de resultados para os investidores</h4>
-                                <p className="text-gray-300 text-xs leading-relaxed">
+                                <h3 className="font-bold text-white text-xl mb-3">Facilitação do demonstrativo de resultados para os investidores</h3>
+                                <hr className="mb-6" />
+                                <p className="text-white-300 text-xs leading-relaxed mb-3">
                                     Criação de relatórios recorrentes com demonstrativos de resultados, aumentando a percepção de valor para os investidores do projeto.
                                 </p>
                             </div>
@@ -138,60 +146,28 @@ export default function ModeloIntegrado() {
             </section>
 
             {/* Cases Section */}
-            <section className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-12 text-center">
+            <section className="py-16 container mx-auto px-4">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-white-600 mb-12 text-center">
                     Cases de sucesso
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    {/* Case 1 */}
-                    <div className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-primary/50 transition-all">
-                        <div className="relative h-48 w-full">
-                            <Image
-                                src="https://i0.wp.com/mentto.com.br/wp-content/uploads/elementor/thumbs/pbis-ra97p4dw5j8d4ab84fv0xi59itnakjc1yefwpdyffq.jpg?w=640&ssl=1"
-                                alt="CCD PBIS"
-                                fill
-                                className="object-cover"
-                                unoptimized
-                            />
-                            <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full">
-                                Campinas
-                            </div>
-                        </div>
-                        <div className="p-6">
-                            <h3 className="text-xl font-serif font-bold text-white mb-4">CCD PBIS</h3>
-                            <p className="text-gray-300 text-sm mb-6">
-                                O Núcleo de Pesquisa Orientada a Problemas – Plataforma Biotecnológica Integrada de Ingredientes Saudáveis (NPOP-PBIS) desenvolve ingredientes saudáveis, sustentáveis e inovadores a partir de matérias-primas nacionais, fortalecendo a competitividade da indústria alimentícia brasileira. Criado no âmbito do programa Ciência para o Desenvolvimento da Fapesp, o projeto une universidades, institutos de pesquisa e empresas em modelo de parceria público-privada. Suas quatro linhas de pesquisa exploram tecnologias emergentes e processos biotecnológicos para criar lipídios estruturados, extratos fenólicos, prebióticos, proteínas doces e novas fontes de proteínas vegetais com funcionalidade tecnológica e nutricional.
-                            </p>
-                            <a href="https://pbis.org.br/" target="_blank" className="text-primary font-bold text-sm hover:underline">
-                                Saiba mais
-                            </a>
-                        </div>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                    <CaseCard
+                        imageSrc="https://i0.wp.com/mentto.com.br/wp-content/uploads/elementor/thumbs/pbis-ra97p4dw5j8d4ab84fv0xi59itnakjc1yefwpdyffq.jpg?w=640&ssl=1"
+                        imageAlt="CCD PBIS"
+                        location="Campinas"
+                        title="CCD PBIS"
+                        description="O Núcleo de Pesquisa Orientada a Problemas – Plataforma Biotecnológica Integrada de Ingredientes Saudáveis (NPOP-PBIS) desenvolve ingredientes saudáveis, sustentáveis e inovadores a partir de matérias-primas nacionais, fortalecendo a competitividade da indústria alimentícia brasileira. Criado no âmbito do programa Ciência para o Desenvolvimento da Fapesp, o projeto une universidades, institutos de pesquisa e empresas em modelo de parceria público-privada. Suas quatro linhas de pesquisa exploram tecnologias emergentes e processos biotecnológicos para criar lipídios estruturados, extratos fenólicos, prebióticos, proteínas doces e novas fontes de proteínas vegetais com funcionalidade tecnológica e nutricional."
+                        linkHref="https://pbis.org.br/"
+                    />
 
-                    {/* Case 2 */}
-                    <div className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-primary/50 transition-all">
-                        <div className="relative h-48 w-full">
-                            <Image
-                                src="https://i0.wp.com/mentto.com.br/wp-content/uploads/elementor/thumbs/circula-ra97pn6ny7y3khjx2nzkbdehej2muheoozhmax6jza.jpg?w=640&ssl=1"
-                                alt="CCD Circula"
-                                fill
-                                className="object-cover"
-                                unoptimized
-                            />
-                            <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md text-white text-xs px-3 py-1 rounded-full">
-                                Campinas
-                            </div>
-                        </div>
-                        <div className="p-6">
-                            <h3 className="text-xl font-serif font-bold text-white mb-4">CCD Circula</h3>
-                            <p className="text-gray-300 text-sm mb-6">
-                                O Centro de Ciência para o Desenvolvimento de Soluções para os Resíduos Pós-Consumo: Embalagens e Produtos é uma iniciativa colaborativa dedicada a desenvolver projetos de pesquisa internacionalmente competitivos, com foco na solução de problemas reais e na transferência de conhecimento e resultados para a sociedade e o mercado. Aprovado em junho de 2022 pela Fapesp, o centro recebe cinco anos de apoio financeiro e é liderado pelo Instituto de Tecnologia de Alimentos (Ital), por meio do Cetea. Baseado no modelo da Tríplice Hélice, promove a integração entre governo, institutos de pesquisa, universidades e empresas, fortalecendo a inovação e a sustentabilidade na gestão de resíduos pós-consumo de embalagens e produtos.
-                            </p>
-                            <a href="https://ccdcircula.org.br/" target="_blank" className="text-primary font-bold text-sm hover:underline">
-                                Saiba mais
-                            </a>
-                        </div>
-                    </div>
+                    <CaseCard
+                        imageSrc="https://i0.wp.com/mentto.com.br/wp-content/uploads/elementor/thumbs/circula-ra97pn6ny7y3khjx2nzkbdehej2muheoozhmax6jza.jpg?w=640&ssl=1"
+                        imageAlt="CCD Circula"
+                        location="Campinas"
+                        title="CCD Circula"
+                        description="O Centro de Ciência para o Desenvolvimento de Soluções para os Resíduos Pós-Consumo: Embalagens e Produtos é uma iniciativa colaborativa dedicada a desenvolver projetos de pesquisa internacionalmente competitivos, com foco na solução de problemas reais e na transferência de conhecimento e resultados para a sociedade e o mercado. Aprovado em junho de 2022 pela Fapesp, o centro recebe cinco anos de apoio financeiro e é liderado pelo Instituto de Tecnologia de Alimentos (Ital), por meio do Cetea. Baseado no modelo da Tríplice Hélice, promove a integração entre governo, institutos de pesquisa, universidades e empresas, fortalecendo a inovação e a sustentabilidade na gestão de resíduos pós-consumo de embalagens e produtos."
+                        linkHref="https://ccdcircula.org.br/"
+                    />
                 </div>
             </section>
 
@@ -216,35 +192,17 @@ export default function ModeloIntegrado() {
             {/* Contact Section */}
             <section id="contact" className="bg-tertiary py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                         <div className="space-y-4">
                             <h2 className="text-2xl md:text-3xl font-serif font-bold text-white">
                                 Vamos conversar sobre inovação?
                             </h2>
-                            <p className="text-gray-200 text-sm leading-relaxed">
+                            <p className="text-gray-200 leading-relaxed">
                                 Preencha o formulário e descubra como podemos transformar ideias em resultados.
                             </p>
                         </div>
 
-                        <form className="space-y-4">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                <div>
-                                    <label className="block text-xs font-bold text-white mb-2">Nome *</label>
-                                    <input type="text" className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm" placeholder="Nome" required />
-                                </div>
-                                <div>
-                                    <label className="block text-xs font-bold text-white mb-2">E-mail *</label>
-                                    <input type="email" className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm" placeholder="E-mail" required />
-                                </div>
-                            </div>
-                            <div>
-                                <label className="block text-xs font-bold text-white mb-2">Mensagem</label>
-                                <textarea rows={3} className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm" placeholder="Mensagem"></textarea>
-                            </div>
-                            <button type="submit" className="w-full bg-secondary text-white font-bold py-3 rounded-lg hover:bg-secondary/90 transition-colors shadow-lg shadow-secondary/20 text-base">
-                                Enviar
-                            </button>
-                        </form>
+                        <ContactForm />
                     </div>
                 </div>
             </section>

@@ -26,61 +26,78 @@ export default function ContactForm() {
     }
 
     return (
-        <form id="contact-form" action={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="bg-white p-10 rounded-lg shadow-xl w-full mx-auto">
+            <h3 className="text-2xl font-bold text-[#083D5F] mb-6">Estamos te esperando</h3>
+            <form id="contact-form" action={handleSubmit} className="space-y-5">
                 <div>
-                    <label className="block text-xs font-bold text-white mb-2" htmlFor="name">Nome *</label>
                     <input
                         id="name"
                         name="name"
                         type="text"
-                        className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm"
+                        className="w-full px-5 py-4 rounded border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-secondary transition-colors text-lg"
                         placeholder="Nome"
                         required
                     />
                 </div>
                 <div>
-                    <label className="block text-xs font-bold text-white mb-2" htmlFor="email">E-mail *</label>
                     <input
                         id="email"
                         name="email"
                         type="email"
-                        className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm"
-                        placeholder="E-mail"
+                        className="w-full px-5 py-4 rounded border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-secondary transition-colors text-lg"
+                        placeholder="Digite seu e-mail *"
                         required
                     />
                 </div>
-            </div>
-            <div>
-                <label className="block text-xs font-bold text-white mb-2" htmlFor="message">Mensagem</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    rows={3}
-                    className="w-full px-4 py-2 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none transition-colors text-sm"
-                    placeholder="Mensagem"
-                ></textarea>
-            </div>
-
-            {status === "error" && (
-                <div className="p-3 bg-red-500/20 border border-red-500/50 rounded-lg text-red-200 text-sm">
-                    {message}
+                <div>
+                    <input
+                        id="whatsapp"
+                        name="whatsapp"
+                        type="tel"
+                        className="w-full px-5 py-4 rounded border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-secondary transition-colors text-lg"
+                        placeholder="Seu WhatsApp"
+                    />
                 </div>
-            )}
-
-            {status === "success" && (
-                <div className="p-3 bg-green-500/20 border border-green-500/50 rounded-lg text-green-200 text-sm">
-                    {message}
+                <div>
+                    <input
+                        id="company"
+                        name="company"
+                        type="text"
+                        className="w-full px-5 py-4 rounded border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-secondary transition-colors text-lg"
+                        placeholder="Qual o nome da sua empresa? *"
+                        required
+                    />
                 </div>
-            )}
+                <div>
+                    <input
+                        id="segment"
+                        name="segment"
+                        type="text"
+                        className="w-full px-5 py-4 rounded border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-secondary transition-colors text-lg"
+                        placeholder="Qual o segmento?"
+                    />
+                </div>
 
-            <button
-                type="submit"
-                disabled={status === "loading"}
-                className="w-full bg-secondary text-white font-bold py-3 rounded-lg hover:bg-secondary/90 transition-colors shadow-lg shadow-secondary/20 text-base disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-                {status === "loading" ? "Enviando..." : "Enviar"}
-            </button>
-        </form>
+                {status === "error" && (
+                    <div className="p-3 bg-red-50 text-red-600 border border-red-200 rounded text-sm">
+                        {message}
+                    </div>
+                )}
+
+                {status === "success" && (
+                    <div className="p-3 bg-green-50 text-green-600 border border-green-200 rounded text-sm">
+                        {message}
+                    </div>
+                )}
+
+                <button
+                    type="submit"
+                    disabled={status === "loading"}
+                    className="w-full bg-[#F26C55] text-white font-bold py-4 rounded hover:bg-[#E05A44] transition-colors text-base disabled:opacity-70 disabled:cursor-not-allowed mt-2"
+                >
+                    {status === "loading" ? "Enviando..." : "Quero transformar a minha empresa"}
+                </button>
+            </form>
+        </div>
     );
 }
