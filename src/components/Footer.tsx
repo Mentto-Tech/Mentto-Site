@@ -79,7 +79,7 @@ export default function Footer() {
 
                         {/* Terms */}
                         <div className="text-center">
-                            <Link className="text-[#083D5F] font-bold text-sm hover:text-primary transition-colors" href="https://mentto.com.br/termos-de-uso-e-politicas-de-privacidade/">
+                            <Link className="text-[#083D5F] font-bold text-sm hover:text-primary transition-colors" href="/termos-de-uso-e-politicas-de-privacidade">
                                 Termos de Uso e Políticas de Privacidade
                             </Link>
                         </div>
