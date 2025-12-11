@@ -13,6 +13,38 @@ export default function TermosPage() {
                     </p>
                 </div>
 
+                <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 backdrop-blur-sm">
+                    <h2 className="text-2xl font-bold text-white mb-6 font-serif border-b border-gray-800 pb-2">Sumário</h2>
+                    <nav>
+                        <ul className="space-y-3">
+                            <li>
+                                <a href="#codigo-conduta" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all flex items-center gap-3 group">
+                                    <span className="w-2 h-2 rounded-full bg-gray-600 group-hover:bg-primary transition-colors"></span>
+                                    Código de Conduta e Ética
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#compliance" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all flex items-center gap-3 group">
+                                    <span className="w-2 h-2 rounded-full bg-gray-600 group-hover:bg-primary transition-colors"></span>
+                                    Política de Compliance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#privacidade" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all flex items-center gap-3 group">
+                                    <span className="w-2 h-2 rounded-full bg-gray-600 group-hover:bg-primary transition-colors"></span>
+                                    Política de Privacidade
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#marketing" className="text-gray-300 hover:text-white hover:translate-x-1 transition-all flex items-center gap-3 group">
+                                    <span className="w-2 h-2 rounded-full bg-gray-600 group-hover:bg-primary transition-colors"></span>
+                                    Política de Marketing
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
                 <div className="space-y-16">
                     {/* Código de Conduta e Ética */}
                     <section id="codigo-conduta" className="scroll-mt-20">
