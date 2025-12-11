@@ -1,0 +1,376 @@
+{
+    "id": "254581c",
+    "elType": "widget",
+    "settings": {
+        "form_name": "forms_comunicacao_incidentes",
+        "form_fields": [
+            {
+                "custom_id": "tipo_de_comunicacao",
+                "field_type": "radio",
+                "field_label": "1.Tipo de Comunicação:",
+                "placeholder": "Nome",
+                "_id": "c221d40",
+                "field_options": "Completa. O incidente aconteceu dentro das instalações\/estrutura  da MENTTO\nParcial. Houve incidente de segurança em ambiente externo ao da MENTTO, mas que envolvem dados pessoais por ela coletados, armazenados ou compartilhados.,"
+            },
+            {
+                "custom_id": "criterio_para_comunicacao",
+                "field_type": "checkbox",
+                "field_label": "2.Critério para a comunicação:",
+                "placeholder": "E-mail",
+                "_id": "f4839f2",
+                "field_options": "O incidente de segurança pode acarretar risco ou dano relevante aos titulares.\nNão tenho certeza sobre o nível de risco do incidente de segurança."
+            },
+            {
+                "custom_id": "agente_de_tratamento",
+                "field_type": "radio",
+                "field_label": "3.Agente de Tratamento. O notificante é:",
+                "placeholder": "Mensagem",
+                "_id": "cf946ff",
+                "field_options": "Controlador de Dados. Aquele que coletou dos dados pessoais diretamente do titular de dados (sem intermediação) \nOperador de dados pessoais. Aquele que, embora não tenha coletado os dados diretamente do titular, acessou, tratou, armazenou e compartilhou dados em razão de uma das hipóteses legais e contratuais.\nNenhuma das opções anteriores. "
+            },
+            {
+                "_id": "92bc7f3",
+                "field_type": "textarea",
+                "field_label": "4.Se o notificante é operador de dados, informar se já houve comunicação do incidente ao Controlador de Dados:",
+                "required": "true",
+                "field_options": "ciente ",
+                "custom_id": "comunicacao_do_incidente"
+            },
+            {
+                "_id": "d996170",
+                "field_label": "5.Dados do notificante: (Nome ou Razão Social):",
+                "required": "true",
+                "custom_id": "nome_razao_social",
+                "field_type": "email"
+            },
+            {
+                "_id": "559ebc3",
+                "field_label": "6.CPF\/CNPJ:",
+                "required": "true",
+                "custom_id": "cpf_cnpj"
+            },
+            {
+                "_id": "3af9b36",
+                "field_label": "7.Telefone (DDD):",
+                "required": "true",
+                "custom_id": "telefone"
+            },
+            {
+                "_id": "6b4eda0",
+                "field_type": "textarea",
+                "field_label": "8. E-mail:",
+                "required": "true",
+                "custom_id": "email"
+            },
+            {
+                "_id": "ec0d8f7",
+                "field_type": "radio",
+                "field_label": "9.Qual a natureza da Organização ou pessoa  notificante?",
+                "required": "true",
+                "field_options": " pública\nprivada",
+                "custom_id": "natureza_da_organizacao"
+            },
+            {
+                "_id": "15cbf97",
+                "field_type": "textarea",
+                "field_label": "10. O notificante , em sendo pessoa jurídica, é encarregado de dados? (*O DPO (Data Protection Officer) tem a função de ser o canal de comunicação entre a empresa, a Autoridade Nacional de Proteção de Dados (ANPD), órgão federal regulador, e o titular dos dados. Cabe a ele esclarecer as políticas da empresa e as decisões tomadas em relação à proteção dos dados e instruir a organização de como garantir o cumprimento da Lei Geral de Proteção de Dados - LGPD:",
+                "required": "true",
+                "custom_id": "notificante_encarregado_de_dados"
+            },
+            {
+                "_id": "29a8fa1",
+                "field_label": "11. Incidente de segurança (*Descreva de forma resumida como o incidente de segurança com dados pessoais ocorreu.):",
+                "required": "true",
+                "custom_id": "incidente_de_seguranca"
+            },
+            {
+                "_id": "362ab41",
+                "field_type": "radio",
+                "field_label": "12.Quando o Incidente Ocorreu?",
+                "required": "true",
+                "field_options": "Não tenho conhecimento\nNão tenho certeza\nData e hora informados no item seguinte",
+                "custom_id": "quando_ocorreu"
+            },
+            {
+                "_id": "ca7a91a",
+                "field_label": "13.Data e hora do incidente:",
+                "custom_id": "data_incidente"
+            },
+            {
+                "_id": "1d8ed9c",
+                "field_label": "14.O notificante sabe informar se a organização envolvida no incidente teve ciência do mesmo?",
+                "required": "true",
+                "custom_id": "organizacao_envolvida"
+            },
+            {
+                "_id": "26444fe",
+                "field_label": "15. O notificante sabe informar como a organização teve ciência do incidente?",
+                "custom_id": "organizacao_ciente"
+            },
+            {
+                "_id": "aac45f2",
+                "field_label": "16. Se a comunicação inicial do incidente de segurança a que se pretende este canal de comunicação,  não está sendo formalizada dentro do prazo de dois dias úteis contados da tomada da ciência do incidente, justifique os motivos:",
+                "required": "true",
+                "custom_id": "justificativa"
+            },
+            {
+                "_id": "1b910f2",
+                "field_label": "17. Se o incidente não foi comunicado de forma imediata após a sua ciência, justifique os motivos da demora:",
+                "custom_id": "justificativa_2"
+            },
+            {
+                "_id": "ad910c3",
+                "field_type": "checkbox",
+                "field_label": "18. Qual a natureza dos dados pessoais afetados pelo incidente?",
+                "field_options": "raça\/etnia\nreligião\nopinião política\nfiliação a sindicato\nFiliação a organização de caráter religioso, filosófico ou político\nsaúde\nvida sexual\ngênero\nbiométrico\nDado de comprovação de identidade oficial (Por exemplo, nº RG, CPF, CNH)\ndados financeiros \nNomes de usuário ou senhas de sistemas de informação\ndados de geolocalização\nOutro",
+                "custom_id": "natureza_dos_dados"
+            },
+            {
+                "_id": "79bc2b9",
+                "field_label": "19.Qual a quantidade de titulares afetados?",
+                "required": "true",
+                "custom_id": "quantidade_de_afetados"
+            },
+            {
+                "_id": "e0c6946",
+                "field_type": "radio",
+                "field_label": "20. Qual a categoria de titulares afetados?",
+                "required": "true",
+                "field_options": "Funcionários\nPrestadores de Serviço\nClientes\nConsumidores\nUsuários\nPacientes de serviços de saúde\ncrianças e\/ou adolescentes\nOutros",
+                "custom_id": "categoria_dos_afetados"
+            },
+            {
+                "_id": "28c7576",
+                "field_label": "21. Quais medidas de segurança, técnicas e administrativas, foram tomadas para prevenir a ocorrência do incidente de segurança?",
+                "required": "true",
+                "custom_id": "medidas_tomadas"
+            },
+            {
+                "_id": "dc7df02",
+                "field_label": "22. Quais medidas de segurança, técnicas e administrativas, foram tomadas após a ciência do incidente de segurança?",
+                "required": "true",
+                "custom_id": "medidas_tomadas_apos"
+            },
+            {
+                "_id": "c498186",
+                "field_label": "23. Quais medidas de segurança, técnicas e administrativas, foram ou serão adotadas para reverter ou mitigar os efeitos do prejuízo do incidente de segurança aos titulares dos dados?",
+                "required": "true",
+                "custom_id": "medidas_tomadas_reverter"
+            },
+            {
+                "_id": "c2f137b",
+                "field_label": "24. O agente de tratamento (controlador ou operador envolvido no incidente) realizou relatório de impacto à proteção de dados pessoais (RIPD)? (Ele passou por algum plano de implantação de conformidade LGPD antes do incidente?",
+                "required": "true",
+                "custom_id": "fierelatorio_ripd"
+            },
+            {
+                "_id": "62b228c",
+                "field_label": "25.Quais as prováveis consequências do incidente de segurança para os titulares afetados?",
+                "custom_id": "field_62b228c"
+            },
+            {
+                "_id": "cf5accd",
+                "field_label": "26.Considerando os titulares afetados, na sua avaliação, o incidente pode trazer consequências transfronteiriças?",
+                "custom_id": "field_cf5accd"
+            },
+            {
+                "_id": "c8ff98c",
+                "field_type": "radio",
+                "field_label": "27.Os titulares foram comunicados sobre o incidente de segurança com dados pessoais? ",
+                "field_options": "Sim\nNão\nNão sei",
+                "custom_id": "field_c8ff98c"
+            },
+            {
+                "_id": "202b704",
+                "field_label": "28.Caso os titulares afetados não tenham sido informados, quais são os motivos que justificam a não comunicação ou o seu retardo?",
+                "custom_id": "field_202b704"
+            }
+        ],
+        "step_next_label": "Próximo",
+        "step_previous_label": "Anterior",
+        "button_text": "Enviar",
+        "email_to": "lgpd@mentto.com.br",
+        "email_subject": "Nova mensagem - Canal de comunicação de Incidentes",
+        "email_content": "[all-fields]",
+        "email_from": "contato@mentto.com.br",
+        "email_from_name": "Mentto",
+        "email_to_2": "tiagog78@gmail.com",
+        "email_subject_2": "Nova mensagem de \"Mentto\"",
+        "email_content_2": "[all-fields]",
+        "email_from_2": "email@mentto.com.br",
+        "email_from_name_2": "Mentto",
+        "email_reply_to_2": "tiagog78@gmail.com",
+        "mailchimp_fields_map": [],
+        "drip_fields_map": [],
+        "activecampaign_fields_map": [],
+        "getresponse_fields_map": [],
+        "convertkit_fields_map": [],
+        "mailerlite_fields_map": [
+            {
+                "remote_id": "email",
+                "remote_label": "Email",
+                "remote_type": "email",
+                "remote_required": true,
+                "_id": "6f00e0b"
+            },
+            {
+                "remote_id": "name",
+                "remote_label": "Name",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "884f3bf"
+            },
+            {
+                "remote_id": "last_name",
+                "remote_label": "Last Name",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "7bbb5f3"
+            },
+            {
+                "remote_id": "company",
+                "remote_label": "Company",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "ca35667"
+            },
+            {
+                "remote_id": "phone",
+                "remote_label": "Phone",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "a00a6e2"
+            },
+            {
+                "remote_id": "country",
+                "remote_label": "Country",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "bcdadda"
+            },
+            {
+                "remote_id": "state",
+                "remote_label": "State",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "bca9bb4"
+            },
+            {
+                "remote_id": "city",
+                "remote_label": "City",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "9c75893"
+            },
+            {
+                "remote_id": "zip",
+                "remote_label": "Zip",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "30aa762"
+            },
+            {
+                "remote_id": "member_rating",
+                "remote_label": "Member rating",
+                "remote_type": "number",
+                "remote_required": false,
+                "_id": "f9ed02a"
+            },
+            {
+                "remote_id": "latitude",
+                "remote_label": "Latitude",
+                "remote_type": "number",
+                "remote_required": false,
+                "_id": "e7380a5"
+            },
+            {
+                "remote_id": "longitude",
+                "remote_label": "Longitude",
+                "remote_type": "number",
+                "remote_required": false,
+                "_id": "1e589e0"
+            },
+            {
+                "remote_id": "last_changed",
+                "remote_label": "Last changed",
+                "remote_type": "date",
+                "remote_required": false,
+                "_id": "db3cc24"
+            },
+            {
+                "remote_id": "subject",
+                "remote_label": "Subject",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "2ac9a5d"
+            },
+            {
+                "remote_id": "birth_date",
+                "remote_label": "Birth Date",
+                "remote_type": "date",
+                "remote_required": false,
+                "_id": "ba73809"
+            },
+            {
+                "remote_id": "message",
+                "remote_label": "Message",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "0ac7d73"
+            },
+            {
+                "remote_id": "gender",
+                "remote_label": "Gender",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "afb9ae3"
+            },
+            {
+                "remote_id": "area_of_interest",
+                "remote_label": "Area of ​​Interest",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "afce221"
+            }
+        ],
+        "success_message": "A mensagem foi enviada.",
+        "error_message": "An error occurred.",
+        "required_field_message": "Este campo é obrigatório.",
+        "invalid_message": "Algo está errado. O formulário é inválido.",
+        "label_color": "#0092B2",
+        "mark_required": "yes",
+        "submit_actions": [
+            "email",
+            "redirect",
+            "mailerlite"
+        ],
+        "redirect_to": "https:\/\/mentto.com.br\/redirecionamento\/obrigado-2\/",
+        "mailerlite_group": "109082708",
+        "row_gap": {
+            "unit": "px",
+            "size": 30,
+            "sizes": []
+        },
+        "mark_required_color": "#F16F63",
+        "html_color": "#FFFFFF",
+        "field_text_color": "#686868",
+        "field_border_radius": {
+            "unit": "px",
+            "top": "4",
+            "right": "4",
+            "bottom": "4",
+            "left": "4",
+            "isLinked": true
+        },
+        "button_border_radius": {
+            "unit": "px",
+            "top": "5",
+            "right": "5",
+            "bottom": "5",
+            "left": "5",
+            "isLinked": true
+        }
+    },
+    "elements": [],
+    "widgetType": "form"
+}

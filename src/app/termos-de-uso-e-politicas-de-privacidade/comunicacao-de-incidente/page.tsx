@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import IncidenteForm from './IncidenteForm';
 
 export default function IncidentePage() {
     return (
@@ -120,15 +121,7 @@ export default function IncidentePage() {
                     </p>
                 </div>
 
-                <div className="bg-tertiary border border-gray-700 rounded-xl p-8 mt-12 text-center">
-                    <h3 className="text-2xl font-bold text-white mb-4 font-serif">Precisa comunicar um incidente?</h3>
-                    <p className="text-gray-300 mb-6">
-                        Se você identificou um incidente de segurança ou suspeita de violação de dados, entre em contato imediatamente com nosso Encarregado de Proteção de Dados.
-                    </p>
-                    <a href="mailto:lgpd@mentto.com.br" className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-opacity-90 md:text-lg transition-colors">
-                        Enviar E-mail para lgpd@mentto.com.br
-                    </a>
-                </div>
+                <IncidenteForm />
             </div>
         </main>
     );

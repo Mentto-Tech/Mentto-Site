@@ -17,6 +17,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/redirecionamento/termo-de-uso-e-politica-de-privacidade',
+        destination: '/termos-de-uso-e-politicas-de-privacidade',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

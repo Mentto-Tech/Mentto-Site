@@ -1,0 +1,296 @@
+{
+    "id": "975b495",
+    "elType": "widget",
+    "settings": {
+        "form_name": "forms_titular_de_dados",
+        "form_fields": [
+            {
+                "custom_id": "solicitante",
+                "field_type": "radio",
+                "field_label": "1. Solicitante",
+                "placeholder": "Nome",
+                "_id": "c221d40",
+                "field_options": "Titular de dados pessoais \nPai\/mãe\nResponsável Legal\nProcurador"
+            },
+            {
+                "custom_id": "vinculo_do_titular",
+                "field_type": "radio",
+                "field_label": "2.Vínculo do Titular com a MENTTO",
+                "placeholder": "E-mail",
+                "_id": "f4839f2",
+                "field_options": "Funcionário CLT\nFornecedor PJ\nEstagiário\nMenor aprendiz\nParticipante dos curso e eventos promovidos pela Mentto\nCliente ou seu representante legal\nPessoa cuja imagem, voz ou outro dados pessoal aparece em instrumento de divulgação da MENTTO\nPessoa que realizou cadastro ou enviou mensagem via site\nOutro vínculo que não os acima"
+            },
+            {
+                "custom_id": "tipo_de_solicitacao",
+                "field_type": "checkbox",
+                "field_label": "3.Tipo de solicitação:",
+                "placeholder": "Mensagem",
+                "_id": "cf946ff",
+                "field_options": "Acesso a dados pessoais tratados\nAnonimização, bloqueio ou eliminação de dados pessoais desnecessários, excessivos ou tratados em desconformidade com o disposto na LGPD\nConfirmação da existência de tratamento de dados pessoais\nEliminação dos dados pessoais tratados com o consentimento\nInformação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa\nRevogação do consentimento anteriormente manifestado"
+            },
+            {
+                "_id": "92bc7f3",
+                "field_type": "radio",
+                "field_label": "4.Para solicitar correção de dados pessoais incompletos, inexatos ou desatualizados, entre em contato com a área de Atendimento ao Candidato, por meio do chat online ou do fale conosco.  (disponíveis no site:  https:\/\/mentto.com.br\/ )",
+                "required": "true",
+                "field_options": "ciente ",
+                "custom_id": "correcao_dos_dados"
+            },
+            {
+                "_id": "d996170",
+                "field_label": "5.Nome do titular",
+                "required": "true",
+                "custom_id": "nome"
+            },
+            {
+                "_id": "559ebc3",
+                "field_label": "6.CPF do titular:",
+                "required": "true",
+                "custom_id": "cpf"
+            },
+            {
+                "_id": "3af9b36",
+                "field_label": "7.E-mail do titular e número de telefone celular para contato:",
+                "required": "true",
+                "custom_id": "email"
+            },
+            {
+                "_id": "6b4eda0",
+                "field_type": "textarea",
+                "field_label": "8.Descrição da solicitação:",
+                "required": "true",
+                "custom_id": "descricao_da_solicitacao"
+            },
+            {
+                "_id": "ec0d8f7",
+                "field_type": "radio",
+                "field_label": "9.Autorizo contato via aplicativo whatsapp\/telegram para resposta referente a esta solicitação",
+                "required": "true",
+                "field_options": "sim\nnão, somente por e-mail",
+                "custom_id": "autorizo_contato"
+            }
+        ],
+        "step_next_label": "Próximo",
+        "step_previous_label": "Anterior",
+        "button_text": "Enviar",
+        "email_to": "lgpd@mentto.com.br",
+        "email_subject": "Nova mensagem - Canal de comunicação Titular de Dados ",
+        "email_content": "[all-fields]",
+        "email_from": "contato@mentto.com.br",
+        "email_from_name": "Mentto",
+        "email_to_2": "tiagog78@gmail.com",
+        "email_subject_2": "Nova mensagem de \"Mentto\"",
+        "email_content_2": "[all-fields]",
+        "email_from_2": "email@mentto.com.br",
+        "email_from_name_2": "Mentto",
+        "email_reply_to_2": "tiagog78@gmail.com",
+        "mailchimp_fields_map": [],
+        "drip_fields_map": [],
+        "activecampaign_fields_map": [],
+        "getresponse_fields_map": [],
+        "convertkit_fields_map": [],
+        "mailerlite_fields_map": [
+            {
+                "remote_id": "email",
+                "remote_label": "Email",
+                "remote_type": "email",
+                "remote_required": true,
+                "_id": "5315540"
+            },
+            {
+                "remote_id": "name",
+                "remote_label": "Name",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "eb12a28",
+                "local_id": "nome"
+            },
+            {
+                "remote_id": "last_name",
+                "remote_label": "Last Name",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "9bdda24"
+            },
+            {
+                "remote_id": "company",
+                "remote_label": "Company",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "d0df074"
+            },
+            {
+                "remote_id": "phone",
+                "remote_label": "Phone",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "a019fbd"
+            },
+            {
+                "remote_id": "country",
+                "remote_label": "Country",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "5c6c485"
+            },
+            {
+                "remote_id": "state",
+                "remote_label": "State",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "0b135be"
+            },
+            {
+                "remote_id": "city",
+                "remote_label": "City",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "d0d50b0"
+            },
+            {
+                "remote_id": "zip",
+                "remote_label": "Zip",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "82dbb4b"
+            },
+            {
+                "remote_id": "member_rating",
+                "remote_label": "Member rating",
+                "remote_type": "number",
+                "remote_required": false,
+                "_id": "46b07c2"
+            },
+            {
+                "remote_id": "latitude",
+                "remote_label": "Latitude",
+                "remote_type": "number",
+                "remote_required": false,
+                "_id": "252029c"
+            },
+            {
+                "remote_id": "longitude",
+                "remote_label": "Longitude",
+                "remote_type": "number",
+                "remote_required": false,
+                "_id": "5fcb027"
+            },
+            {
+                "remote_id": "last_changed",
+                "remote_label": "Last changed",
+                "remote_type": "date",
+                "remote_required": false,
+                "_id": "ad87e5a"
+            },
+            {
+                "remote_id": "subject",
+                "remote_label": "Subject",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "3f65c19"
+            },
+            {
+                "remote_id": "birth_date",
+                "remote_label": "Birth Date",
+                "remote_type": "date",
+                "remote_required": false,
+                "_id": "792debd"
+            },
+            {
+                "remote_id": "message",
+                "remote_label": "Message",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "5ecaf03"
+            },
+            {
+                "remote_id": "gender",
+                "remote_label": "Gender",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "9d97297"
+            },
+            {
+                "remote_id": "area_of_interest",
+                "remote_label": "Area of ​​Interest",
+                "remote_type": "text",
+                "remote_required": false,
+                "_id": "a1dbf6c"
+            }
+        ],
+        "success_message": "A mensagem foi enviada.",
+        "error_message": "An error occurred.",
+        "required_field_message": "Este campo é obrigatório.",
+        "invalid_message": "Algo está errado. O formulário é inválido.",
+        "label_color": "#000000",
+        "mark_required": "yes",
+        "submit_actions": [
+            "email",
+            "redirect",
+            "mailerlite"
+        ],
+        "redirect_to": "https:\/\/mentto.com.br\/inscricao-confirmada\/",
+        "mailerlite_group": "109082708",
+        "row_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+        },
+        "mark_required_color": "#A5A5A5",
+        "field_text_color": "#DEE2E6",
+        "input_size": "md",
+        "button_size": "md",
+        "field_typography_typography": "custom",
+        "field_typography_font_family": "Source Sans Pro",
+        "field_typography_font_size": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+        },
+        "field_typography_font_weight": "400",
+        "field_border_color": "#DEE2E6",
+        "field_border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+        },
+        "button_typography_typography": "custom",
+        "button_typography_font_family": "Source Sans Pro",
+        "button_typography_font_size": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+        },
+        "button_typography_font_weight": "500",
+        "button_background_color": "#F16F63",
+        "_ha_condition_list": [
+            {
+                "_id": "e9c49ae",
+                "_ha_condition_date_range": "01-06-2022 to 03-06-2022",
+                "_ha_condition_date": "01-06-2022"
+            }
+        ],
+        "custom_css": "selector *{\n    font-family: ''Source Sans Pro'', Sans-Serif !important;\n}\n\n.elementor-field-label{\n    color: #00758E !important;\n    font-weight: bold !important;\n}\n\nselector .focused input{\n    border-color: #F16F63 !important;\n    color: #F16F63 !important; \n}",
+        "_title": "Formulário",
+        "label_spacing": {
+            "unit": "px",
+            "size": 5,
+            "sizes": []
+        },
+        "label_typography_typography": "custom",
+        "label_typography_font_family": "Source Sans Pro",
+        "label_typography_font_size": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+        },
+        "html_typography_typography": "custom",
+        "html_typography_font_family": "Source Sans Pro",
+        "html_typography_font_weight": "400"
+    },
+    "elements": [],
+    "widgetType": "form"
+}

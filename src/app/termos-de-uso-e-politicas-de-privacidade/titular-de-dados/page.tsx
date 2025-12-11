@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TitularForm from './TitularForm';
 
 export default function TitularPage() {
     return (
@@ -62,18 +63,7 @@ export default function TitularPage() {
                     </p>
                 </div>
 
-                <div className="bg-tertiary border border-gray-700 rounded-xl p-8 text-center shadow-sm">
-                    <h3 className="text-2xl font-bold text-white mb-4 font-serif">Entre em Contato</h3>
-                    <p className="text-gray-300 mb-6">
-                        Envie sua solicitação diretamente para nossa equipe de privacidade.
-                    </p>
-                    <a href="mailto:lgpd@mentto.com.br" className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-opacity-90 md:text-lg transition-colors shadow-sm hover:shadow-md">
-                        Enviar E-mail para lgpd@mentto.com.br
-                    </a>
-                    <p className="text-xs text-gray-400 mt-4">
-                        Ao clicar, seu cliente de e-mail padrão será aberto.
-                    </p>
-                </div>
+                <TitularForm />
             </div>
         </main>
     );
