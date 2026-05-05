@@ -80,7 +80,7 @@ export default function ModeloIntegrado() {
                     {/* Vale da Morte Chart */}
                     <div className="relative w-full bg-white/5 rounded-3xl overflow-hidden border border-white/10 p-6 md:p-8">
                         <Image
-                            src="https://i0.wp.com/mentto.com.br/wp-content/uploads/2025/08/Grafico-vale-da-morte.png?fit=2296%2C1387&ssl=1"
+                            src="/assets/vale_morte_mentto.jpeg"
                             alt="Gráfico Vale da Morte"
                             width={1200}
                             height={600}
@@ -161,7 +161,7 @@ export default function ModeloIntegrado() {
                     />
 
                     <CaseCard
-                        imageSrc="https://i0.wp.com/mentto.com.br/wp-content/uploads/elementor/thumbs/circula-ra97pn6ny7y3khjx2nzkbdehej2muheoozhmax6jza.jpg?w=640&ssl=1"
+                        imageSrc="/assets/ccd_circula.jpeg"
                         imageAlt="CCD Circula"
                         location="Campinas"
                         title="CCD Circula"

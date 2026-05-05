@@ -14,7 +14,7 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
                     <Image
-                        src="https://i0.wp.com/mentto.com.br/wp-content/uploads/2025/08/Logo-secundario-scaled.png?fit=640%2C145&ssl=1"
+                        src="/assets/Logo-Mentto.png"
                         alt="Mentto"
                         width={160}
                         height={40}

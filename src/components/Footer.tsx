@@ -11,7 +11,7 @@ export default function Footer() {
                         <Image
                             alt="Mentto logo"
                             className="h-12 mb-6 dark:invert w-auto"
-                            src="https://i0.wp.com/mentto.com.br/wp-content/uploads/2025/08/Logo-secundario-scaled.png?fit=300%2C68&ssl=1"
+                            src="/assets/Logo-Mentto.png"
                             width={300}
                             height={68}
                         />
